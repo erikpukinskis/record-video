@@ -1,7 +1,7 @@
 var library = require("module-library")(require)
 
-library.define(
-  "record-daisy",
+module.exports = library.export(
+  "record-video",
   ["web-element", "web-site", "browser-bridge"],
   function(element, site, bridge) {
 
@@ -11,13 +11,14 @@ library.define(
         element(".climpchamp-wrapper"),
       ])
 
-      brige.asap(function() {
+      bridge.asap(function() {
         clipchamp.preload()
         var el = document.querySelector(".climpchamp-wrapper")
         clipchamp(el)
       })
 
-      site.addRoute("get", "/", bridge.requestHandler(page))
+
+      site.addRoute("get", "/record-video", bridge.requestHandler(page))
     }
   }
 )
