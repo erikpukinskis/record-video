@@ -1,0 +1,15 @@
+{
+  "name": "record-daisy",
+  "version": "0.0.0",
+  "description": "Capture the key woge forever and ever",
+  "main": "daisy-june.js",
+  "dependencies": {
+    "module-library": "*",
+    "browser-bridge": "*",
+    "web-element": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erikpukinskis/record-daisy.git"
+  }
+}
