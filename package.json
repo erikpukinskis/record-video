@@ -1,8 +1,8 @@
 {
-  "name": "record-daisy",
+  "name": "record-video",
   "version": "0.0.0",
-  "description": "Capture the key woge forever and ever",
-  "main": "daisy-june.js",
+  "description": "Capture moving pictures",
+  "main": "record-video.js",
   "dependencies": {
     "module-library": "*",
     "browser-bridge": "*",
@@ -10,6 +10,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/erikpukinskis/record-daisy.git"
+    "url": "https://github.com/erikpukinskis/record-video.git"
   }
 }
