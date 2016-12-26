@@ -14,7 +14,16 @@ module.exports = library.export(
       bridge.asap(function() {
         clipchamp.preload()
         var el = document.querySelector(".climpchamp-wrapper")
-        clipchamp(el)
+        clipchamp(el, {
+          output: 's3',
+          label: 'Upload video',
+          title: 'Please select a video',
+          s3: {
+            bucket: "daisy-videos"
+          },
+          onUploadComplete: function(data) {
+            alert('Video was uploaded to AWS S3, object key is: '+data.key);
+          })
       })
 
 
