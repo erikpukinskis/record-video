@@ -6,7 +6,14 @@
   "dependencies": {
     "module-library": "*",
     "browser-bridge": "*",
-    "web-element": "*"
+    "web-element": "*",
+    "web-site": "*",
+    "browser-bridge": "*",
+    "path": "*",
+    "crypto": "*",
+    "moment": "*",
+    "aws-sdk": "*",
+    "zencoder": "*"
   },
   "repository": {
     "type": "git",
